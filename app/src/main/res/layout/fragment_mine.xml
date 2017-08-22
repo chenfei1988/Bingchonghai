@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+        <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/stx_head"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            app:sLeftBottomMaxEms="80"
+            app:sLeftBottomTextColor="@color/gray_text"
+            app:sLeftBottomTextSize="12sp"
+            app:sLeftBottomTextString="欢迎登录"
+            app:sLeftTopTextColor="@color/black"
+            app:sLeftTopTextSize="18sp"
+            app:sLeftTopTextString="张三"
+            app:sLeftViewGravity="left_center" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_05"
+        android:background="@drawable/horizontal_line_gray" />
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        android:layout_marginTop="5dp"
+        app:sCenterTextColor="@color/gray_text"
+        app:sCenterTextSize="12sp"
+        app:sCenterViewGravity="left_center"
+        app:sBottomDividerLineMarginLeft="40dp"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="both"
+        app:sLeftBottomMaxEms="80"
+        app:sLeftBottomTextColor="@color/white"
+        app:sLeftIconRes="@mipmap/ic_msg"
+        app:sLeftTextString="我的评论"
+        app:sRightIconRes="@mipmap/ic_arrow_right"
+        app:sRightTvDrawableRight="@mipmap/ic_new" />
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        android:id="@+id/stx_collect"
+        app:sCenterTextColor="@color/gray_text"
+        app:sCenterTextSize="12sp"
+        app:sCenterViewGravity="left_center"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="bottom"
+        app:sLeftBottomMaxEms="80"
+        app:sLeftBottomTextColor="@color/white"
+        app:sLeftIconRes="@mipmap/ic_favorite"
+        app:sBottomDividerLineMarginLeft="40dp"
+        app:sLeftTextString="我的收藏"
+        app:sRightIconRes="@mipmap/ic_arrow_right" />
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        android:id="@+id/stx_clean"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="bottom"
+        app:sLeftIconRes="@mipmap/ic_clean"
+        app:sLeftTextString="清理缓存" />
+
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        android:layout_marginTop="5dp"
+        app:sCenterTextColor="@color/gray_text"
+        app:sCenterTextSize="12sp"
+        app:sCenterViewGravity="left_center"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="both"
+        app:sLeftIconRes="@mipmap/ic_call"
+        app:sLeftTextString="客服电话"
+        app:sBottomDividerLineMarginLeft="40dp"
+        app:sRightTextColor="@color/gray_text"
+        app:sRightTextString="023-52605032" />
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/stx_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        app:sCenterTextColor="@color/gray_text"
+        app:sCenterTextSize="12sp"
+        app:sCenterViewGravity="left_center"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="bottom"
+        app:sLeftIconRes="@mipmap/ic_about"
+        app:sLeftTextString="关于系统"
+        app:sRightTextColor="@color/gray_text"
+        app:sRightTextString="v1.1.1" />
+
+
+    <com.allen.library.SuperTextView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_height"
+        android:layout_marginTop="5dp"
+        app:sCenterTextColor="@color/gray_text"
+        app:sCenterTextSize="12sp"
+        android:id="@+id/stx_exit"
+        app:sCenterViewGravity="left_center"
+        app:sDividerLineColor="@color/gray_line"
+        app:sDividerLineType="both"
+        app:sLeftIconRes="@mipmap/ic_off"
+        app:sLeftTextString="退出登录" />
+</LinearLayout>

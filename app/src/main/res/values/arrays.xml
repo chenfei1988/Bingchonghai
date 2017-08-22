@@ -1,0 +1,105 @@
+<resources>
+
+    <string-array name="home_menus">
+        <item>绿色防控#病害、虫害#ic_beetle#control</item>
+        <item>栽培技术#种植布局、土壤等#ic_leaf#cultivation</item>
+        <item>品种资源#K236、白助烟等#ic_bag#variety</item>
+        <item>金叶学苑#培训、试验示范等#ic_book#academe</item>
+        <item>采收烘烤#采收、烘烤等#ic_antumn#bake</item>
+        <item>咨询专家#在线咨询专家#ic_cap#consult</item>
+    </string-array>
+
+    <string-array name="pets_detail_items">
+        <item>为害症状</item>
+        <item>防治方法</item>
+        <item>病害描述</item>
+        <item>病原病理</item>
+        <item>发生规律</item>
+    </string-array>
+
+    <string-array name="variety_detail_items">
+        <item>特征特性</item>
+        <item>抗病性</item>
+        <item>栽培技术要点</item>
+        <item>烘烤技术要点</item>
+    </string-array>
+    <string-array name="harvest_detail_items">
+        <item>成熟度</item>
+        <item>采收标准</item>
+        <item>采收方法</item>
+        <item>采收注意事项</item>
+    </string-array>
+
+    <string-array name="bake_detail_items">
+        <item>使用范围</item>
+        <item>编烟装烟</item>
+        <item>烘烤工艺</item>
+    </string-array>
+
+    <string-array name="bake_bad_items">
+        <item>描述</item>
+        <item>生成原因</item>
+        <item>防止技术措施</item>
+    </string-array>
+
+
+    <string-array name="control">
+        <item>病害#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.PestFragment#com.tobacco.xinyiyun.knowledge.mvp.home.PestSearchActivity#arg1=1</item>
+        <item>虫害#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.PestFragment#com.tobacco.xinyiyun.knowledge.mvp.home.PestSearchActivity#arg1=2</item>
+    </string-array>
+
+    <string-array name="cultivation">
+        <item>种植布局#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.CultivationFragment#com.tobacco.xinyiyun.knowledge.mvp.home.CultivationSearchActivity#arg1=1</item>
+        <item>土壤保育#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.CultivationFragment#com.tobacco.xinyiyun.knowledge.mvp.home.CultivationSearchActivity#arg1=2</item>
+        <item>育苗技术#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.CultivationFragment#com.tobacco.xinyiyun.knowledge.mvp.home.CultivationSearchActivity#arg1=3</item>
+        <item>大田管理#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.CultivationFragment#com.tobacco.xinyiyun.knowledge.mvp.home.CultivationSearchActivity#arg1=4</item>
+    </string-array>
+    <string-array name="variety">
+        <item>品种资源#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.VarietyFragment#com.tobacco.xinyiyun.knowledge.mvp.home.VarietySearchActivity#arg1=1</item>
+    </string-array>
+
+    <string-array name="academe">
+        <item>标准知识库#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.AcademeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.AcademeSearchActivity#arg1=1</item>
+        <item>培训#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.AcademeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.AcademeSearchActivity#arg1=2</item>
+        <item>实验示范#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.AcademeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.AcademeSearchActivity#arg1=3</item>
+    </string-array>
+
+    <string-array name="bake">
+        <item>成熟采收#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.BakeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.HarvestSearchActivity#arg1=1</item>
+        <item>科学烘烤#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.BakeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.BakeSearchActivity#arg1=2</item>
+        <item>烤坏烟叶类型#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.BakeFragment#com.tobacco.xinyiyun.knowledge.mvp.home.VarietySearchActivity#arg1=3</item>
+        <item>烘烤曲线#com.tobacco.xinyiyun.knowledge.mvp.home.fragment.CurveFragment#com.tobacco.xinyiyun.knowledge.mvp.home.CurveSearchActivity#arg1=4</item>
+    </string-array>
+
+    <string-array name="consult">
+        <item>专家咨询###</item>
+    </string-array>
+
+
+    <string-array name="citys">
+        <item>全省#</item>
+        <item>昆明市#五华区,盘龙区,官渡区,西山区,东川区,呈贡区,安宁市,晋宁县,富民县,嵩明县,石林彝族自治县,禄劝彝族苗族自治县,寻甸回族自治县</item>
+        <item>曲靖市#麒麟区,沾益区,宣威市,马龙县,陆良县,师宗县,罗平县,富源县,会泽县</item>
+        <item>玉溪市#红塔区,江川区,澄江县,通海县,华宁县,易门县,峨山彝族自治县,新平彝族傣族自治县,元江哈尼族彝族傣族自治县</item>
+        <item>保山市#隆阳区,腾冲市,施甸县,龙陵县,昌宁县</item>
+        <item>昭通市#昭阳区,鲁甸县,巧家县,盐津县,大关县,永善县,绥江县,镇雄县,彝良县,威信县,水富县</item>
+        <item>丽江市#古城区,永胜县,华坪县,玉龙纳西族自治县,宁蒗彝族自治县</item>
+        <item>普洱市#思茅区,宁洱哈尼族彝族自治县,墨江哈尼族自治县,景东彝族自治县,景谷彝族傣族自治县,镇沅彝族哈尼族拉祜族自治县,江城哈尼族彝族自治县,孟连傣族拉祜族佤族自治县,澜沧拉祜族自治县,西盟佤族自治县</item>
+        <item>文山壮族苗族自治州#文山市,砚山县,西畴县,麻栗坡县,马关县,丘北县,广南县,富宁县</item>
+        <item>红河哈尼族彝族自治州#蒙自市,个旧市,开远市,弥勒市,建水县,石屏县,泸西县,元阳县,红河县,绿春县,屏边苗族自治县,金平苗族瑶族傣族自治县,河口瑶族自治县</item>
+        <item>西双版纳傣族自治州#蒙自市,景洪市,勐海县,勐腊县</item>
+        <item>楚雄彝族自治州#楚雄市,双柏县,牟定县,南华县,姚安县,大姚县,永仁县,元谋县,武定县,禄丰县</item>
+        <item>大理白族自治州#大理市,祥云县,宾川县,弥渡县,永平县,云龙县,洱源县,剑川县,鹤庆县,漾濞彝族自治县,南涧彝族自治县,巍山彝族回族自治县</item>
+        <item>德宏傣族景颇族自治州#芒市,瑞丽市,梁河县,盈江县,陇川县</item>
+        <item>怒江傈傈族自治州#泸水县,福贡县,贡山独龙族怒族自治县,兰坪白族普米族自治县</item>
+        <item>迪庆藏族自治州#香格里拉市,德钦县,维西傈僳族自治县</item>
+    </string-array>
+
+    <string-array name="question_types">
+        <item>请选择问题归类</item>
+        <item>植保</item>
+        <item>栽培</item>
+        <item>烘烤</item>
+        <item>其他</item>
+    </string-array>
+</resources>

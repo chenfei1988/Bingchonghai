@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/gray_bg">
+
+            <EditText
+                android:id="@id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableLeft="@mipmap/ic_search"
+                android:drawablePadding="5dp"
+                android:hint="请输入搜索关键词"
+                android:lines="1"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="30dp"
+                android:textColorHint="@color/gray_text"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@mipmap/ic_close"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@id/tx_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingRight="15dp"
+            android:text="搜索" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@id/rcl_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_filter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical|right"
+                    android:text="按部位"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chk_gen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="根部" />
+
+                    <CheckBox
+                        android:id="@+id/chk_jing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="颈部" />
+
+                    <CheckBox
+                        android:id="@+id/chk_ye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="叶部" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical|right"
+                    android:text="按生长期"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chk_mq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="苗床期" />
+
+                    <CheckBox
+                        android:id="@+id/chk_hmq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="还苗期" />
+
+                    <CheckBox
+                        android:id="@+id/chk_tk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="团棵期" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chk_wz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="旺长期" />
+
+                    <CheckBox
+                        android:id="@+id/chk_cs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="成熟期" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chk_primary_round_drawable"
+                        android:button="@null"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="成熟期"
+
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>

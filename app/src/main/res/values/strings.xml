@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">知识阅读</string>
+    <string name="network_error">网络异常,请检查网络连接!</string>
+    <string name="click_again_exit">再次点击退出应用</string>
+    <string name="click_retry">点击重试</string>
+    <string name="please_wait">请稍等</string>
+    <string name="pre_key_boolean_remember_the_password">pre_key_boolean_remember_the_password</string>
+    <string name="pre_key_boolean_is_first_lanuch">pre_key_boolean_is_first_lanuch</string>
+    <string name="pref_key_object_user">pref_key_object_user</string>
+
+</resources>

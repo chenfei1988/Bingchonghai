@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_white_drawable"
+        android:drawableLeft="@mipmap/ic_user"
+        android:drawablePadding="15dp"
+        android:gravity="left|center_vertical"
+        android:hint="请输入你的手机号"
+        android:imeOptions="actionNext"
+        android:maxLength="20"
+        android:textColorHint="@color/gray_text"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/horizontal_line_gray" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_white_drawable"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:drawablePadding="15dp"
+        android:gravity="left|center_vertical"
+        android:hint="请输入密码(至少6位)"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textColorHint="@color/gray_text"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/horizontal_line_gray" />
+
+    <EditText
+        android:id="@+id/edit_pwd_agin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_white_drawable"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:drawablePadding="15dp"
+        android:gravity="left|center_vertical"
+        android:hint="请输入确认密码"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:textColorHint="@color/gray_text"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/horizontal_line_gray" />
+
+
+    <com.dd.processbutton.iml.ActionProcessButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="25dp"
+        android:text="注册"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:pb_colorComplete="@color/colorPrimary"
+        app:pb_colorNormal="@color/colorPrimary"
+        app:pb_colorPressed="@color/colorPrimary"
+        app:pb_colorProgress="@color/c_5ab392"
+        app:pb_textComplete="注册"
+        app:pb_textProgress="注册中" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/chk_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我已认真阅读并通过"
+            android:textColor="@color/gray_text"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tx_rules"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="3dp"
+            android:text="用户使用条款"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>
